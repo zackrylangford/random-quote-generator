@@ -1,0 +1,52 @@
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding-top: 50px;
+  }
+
+  #quote {
+    font-size: 24px;
+    color: #333;
+  }
+
+  #new-quote {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+
+button {
+    background-color: blue;
+    border-radius: 12px;
+    color: white;
+    padding: 10px 20px; /* Added to give the button some inner space */
+}
+
+
+#button-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  width: 10px;
+  height: 10px;
+  animation: spin 1s linear infinite;
+  display: none; /* Initially, the loader should not be visible */
+  /* Centering the loader */
+  position: absolute;
+  top: 100%; /* Positioned at the bottom of the parent div */
+  left: 48%; /* Positioned in the middle of the parent div */
+  transform: translate(0%, 0); /* Translate only horizontally, no need to move it vertically */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
